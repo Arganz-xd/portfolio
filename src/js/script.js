@@ -5,12 +5,12 @@ window.onscroll = function () {
 
   if (window.pageYOffset > fixedNav) {
     header.classList.add("navbar-fixed");
-      toTop.classList.remove("hidden");
-      toTop.classList.add("flex");
+    toTop.classList.remove("hidden");
+    toTop.classList.add("flex");
   } else {
     header.classList.remove("navbar-fixed");
-      toTop.classList.remove("flex");
-      toTop.classList.add("hidden");
+    toTop.classList.remove("flex");
+    toTop.classList.add("hidden");
   }
 };
 
@@ -33,9 +33,11 @@ window.addEventListener("click", function (e) {
 
 const text = document.getElementById("typing");
 let typed = new Typed(text, {
-  strings: ["I'm Arbi Niandi Saputra"],
-  typeSpeed: 100,
+  strings: [
+    "On a journey to become a web developer who doesn't just work but also creates.",
+  ],
+  typeSpeed: 45,
   onComplete: (self) => {
-    self.cursor.remove(); 
+    self.cursor.remove();
   },
 });
